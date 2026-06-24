@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1730,
+        "origin": "New York",
+        "destination": "Los Angeles",
+        "shipment_status": "In Transit",
+        "weight": 30
+    },
+    {
+        "id": 1731,
+        "origin": "Chicago",
+        "destination": "Houston",
+        "shipment_status": "Delivered",
+        "weight": 25
+    },
+    {
+        "id": 1732,
+        "origin": "San Francisco",
+        "destination": "Seattle",
+        "shipment_status": "Pending",
+        "weight": 15
+    },
+    {
+        "id": 1733,
+        "origin": "Miami",
+        "destination": "Atlanta",
+        "shipment_status": "In Transit",
+        "weight": 15
+    },
+    {
+        "id": 1734,
+        "origin": "Denver",
+        "destination": "Phoenix",
+        "shipment_status": "Delayed",
+        "weight": 23
+    },
+    {
+        "id": 1735,
+        "origin": "Boston",
+        "destination": "Philadelphia",
+        "shipment_status": "Delivered",
+        "weight": 20
+    },
+    {
+        "origin": "khfbvuir",
+        "destination": "jfbvlciq",
+        "weight": 28.0,
+        "id": 1736,
+        "shipment_status": "Pending"
+    }
+]
