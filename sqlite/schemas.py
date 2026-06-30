@@ -1,4 +1,5 @@
-from enum import Enum #Enumerations are used to define a set of named values
+from enum import Enum
+from unittest.mock import Base #Enumerations are used to define a set of named values
 from pydantic import BaseModel, Field
 #BaseModel is the base class for all Pydantic models to define the structure of the data like for example, the fields and their types.
 #Field is used to provide additional information about the fields in the model and which are required/mandatory.
@@ -11,7 +12,7 @@ from pydantic import BaseModel, Field
 #    return randint(1, 40)
 
 class ShipmentStatus(str, Enum): #here Enum is used to create an enumeration. enumurate means to assign a name to each value in the enumeration.
-    PENDING = "Pending"
+    PLACED = "placed"
     IN_TRANSIT = "In Transit"
     DELIVERED = "Delivered"
     DELAYED = "Delayed"
@@ -26,13 +27,15 @@ class Baseshipment(BaseModel):
 
 class Readshipment(Baseshipment):    
     shipment_status: ShipmentStatus  
+    shipment_id: int
 
 
 class Createshipment(Baseshipment):
     pass
 
-class Updateshipment(BaseModel):
+class Updateshipment(Baseshipment):
     shipment_status: ShipmentStatus | None = None
+    shipment_id: int
 
 
 

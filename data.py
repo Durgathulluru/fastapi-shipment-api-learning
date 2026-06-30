@@ -76,7 +76,7 @@ for record in data:
     # Store the complete shipment record as its value.
     #
     # Example:
-    # shipments[1730] = {
+    # shipments1730] = {
     #     "id": 1730,
     #     "origin": "New York",
     #     ...
